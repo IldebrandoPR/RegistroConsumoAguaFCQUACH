@@ -23,6 +23,6 @@ sheet_url = st.secrets["public_gsheets_url"]
 rows = run_query(f'SELECT * FROM "{sheet_url}"')
 
 # Print results.
-st.write(rows)
-#for row in rows:
-#    st.write(f"{row.name} has a :{row.pet}:")
+#st.write(rows)
+for row in rows:
+    st.write(f"{row.fecha} {row.totalizador}")
