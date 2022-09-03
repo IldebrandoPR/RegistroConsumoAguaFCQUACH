@@ -25,4 +25,4 @@ rows = run_query(f'SELECT * FROM "{sheet_url}"')
 # Print results.
 #st.write(rows)
 for row in rows:
-    st.write(f"{row.Fecha}")
+    st.write(f"{row.Fecha} {row.Totalizador}")
